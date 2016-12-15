@@ -13,8 +13,8 @@ import org.apache.commons.lang.SerializationUtils;
 
 public class QueueConsumer extends Connector implements Runnable, Consumer {
 
-	public QueueConsumer(String endPointName) throws IOException, TimeoutException {
-		super(endPointName);
+	public QueueConsumer(String queueName) throws IOException, TimeoutException {
+		super(queueName);
 	}
 
 	public void run() {
